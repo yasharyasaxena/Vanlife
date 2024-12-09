@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import imgUrl from "/src/assets/images/avatar-icon.png";
 
 export default function Header() {
   return (
@@ -26,6 +27,9 @@ export default function Header() {
           >
             About
           </NavLink>
+          <Link to="login" className="login-link">
+            <img src={imgUrl} className="login-icon" />
+          </Link>
         </nav>
       </header>
     </>
